@@ -152,7 +152,7 @@ figure.alchemy {
     width: 71%;
 }
 
-/* lounger  */
+/* lounger + experience */
 
 #lounger, #experience {
     display: flex;
@@ -177,6 +177,8 @@ figure.alchemy {
 .loungertxt h1 {
     margin: 18% 0;
 }
+
+/* inspiration */
 
 
 
