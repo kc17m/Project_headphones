@@ -34,7 +34,7 @@ header, main {
 }
 
 nav > div {
-    width: 44%;
+    width: 40%;
 }
 
 .socialMedia li {
@@ -160,15 +160,17 @@ figure.alchemy {
 
 .lounger-bg {
     width: 60%;    
-    margin: -2% 0 -5% -5%;    
+    margin: -2% 0 1% -4%;    
 }
 
 .lounger-bg img {
-   object-fit: cover;    
+   object-fit: cover; 
+   width: 99%%;
+   height: 128%;   
 }
 
 .loungertxt {    
-    padding: 10%;
+    padding: 10% 0 5% 3%;
     width: 40%;
 }
 
