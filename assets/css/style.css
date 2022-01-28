@@ -1,0 +1,200 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font: Work sans
+Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115)  */
+
+@font-face {
+    font-family: Work sans;
+    src: url(../fonts/Work_Sans/static/WorkSans-Medium.ttf);
+}
+
+body {
+    background: #2e2e2e;
+    font-family: Work sans;    
+}
+
+nav {
+    position: fixed;
+    top: 2%;
+    width: 95%;
+   }
+
+nav, nav div {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; 
+}
+
+header, main {    
+    margin: 2%;
+}
+
+nav > div {
+    width: 44%;
+}
+
+.socialMedia li {
+    padding: 0 3%;
+}
+
+a, ul {
+    color: #867772;
+    text-decoration: unset;
+}
+
+header a:hover {
+    color: #fff;
+    text-decoration: underline;
+    transition: all .5s linear;
+}
+/* side nav */
+
+.navbar {
+    position: fixed;
+    z-index: 5;
+    top: 15%;
+}
+ul {
+    list-style-type: none;
+    font-size: 1.2rem;       
+}
+
+main li:nth-of-type(even) {
+    width: 105%;
+    margin: 0 20% 0 0;
+    padding: 12% 0;
+}
+
+main li:nth-of-type(even)::before {
+    content: "◎ ";        
+}
+
+main li:nth-of-type(even):active::before {
+    content: "⦿ ";  /* noch schauen!!! */       
+}
+
+main li:nth-of-type(odd) {
+    padding: 50% 0 0 5%;
+    border-left: 1px solid #867772;
+    margin: 0 0 0 7%;
+}
+    
+p {
+    color: rgb(115, 115, 115);
+    line-height: 2rem;
+    margin: 5% 0;
+}
+
+h1, h2 {
+    color: rgb(234, 204, 194);
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-top: 10%;
+}
+
+h2{
+    font-size: 1.2rem;
+}
+
+.button {
+    color: rgb(115, 115, 115);
+    background: #ebccc2;
+}
+
+ul li a:active, ul li a:hover {
+    color: #fff;
+    transition: .3s;
+}
+
+/* main  */
+.mainAbout {
+    width: 100%;
+       
+}
+
+img {
+    width: 100%;
+}
+/* About  */
+#about {
+    /* margin: 0 0 0 -20%; */ */
+   }
+
+.goBeyond {
+    width: 29%;
+    margin: 10% 0 10% 28%;
+}
+
+.goBeyond_bg {
+    width: 95%;
+    margin: 5% 10% 5% 2%;
+}
+
+.aboutAlchemy {
+    width: 80%;
+    margin: 8% auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+
+figure.alchemy {
+    width: 80%;
+    height: 80%
+}
+
+.aboutAlchemy p {
+    width: 71%;
+}
+
+/* lounger  */
+
+ #lounger, #experience {
+   z-index: -1;
+  
+}
+
+
+
+#lounger img, #experience img {
+    width: 60vw;
+    margin: -20% 0 0 -20%;
+}
+
+.loungertxt {
+    
+    padding: 10%;
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
