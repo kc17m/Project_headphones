@@ -120,11 +120,9 @@ ul li a:active, ul li a:hover {
 
 img {
     width: 100%;
+    height: 100%;
 }
 /* About  */
-#about {
-    /* margin: 0 0 0 -20%; */ */
-   }
 
 .goBeyond {
     width: 29%;
@@ -156,23 +154,25 @@ figure.alchemy {
 
 /* lounger  */
 
- #lounger, #experience {
-   z-index: -1;
-  
+#lounger {
+    display: flex;
 }
 
-
-
-#lounger img, #experience img {
-    width: 60vw;
-    margin: -20% 0 0 -20%;
+.lounger-bg {
+    width: 60%;    
+    margin: -2% 0 -5% -5%;    
 }
 
-.loungertxt {
-    
+.lounger-bg img {
+   object-fit: cover;    
+}
+
+.loungertxt {    
     padding: 10%;
-    width: 50%;
+    width: 40%;
 }
+
+
 
 
 
