@@ -9,7 +9,7 @@ Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 
 
 @font-face {
     font-family: Work sans;
-    src: url(../fonts/Work_Sans/static/WorkSans-Medium.ttf);
+    src: url(../fonts/Work_Sans/static/WorkSans-Light.ttf);
 }
 
 body {
@@ -21,7 +21,7 @@ nav {
     position: fixed;
     top: 2%;
     width: 95%;
-   }
+}
 
 nav, nav div {
     list-style: none;
@@ -29,12 +29,8 @@ nav, nav div {
     justify-content: space-between; 
 }
 
-header, main {    
-    margin: 2%;
-}
-
 nav > div {
-    width: 40%;
+    width: 37%;
 }
 
 .socialMedia li {
@@ -55,12 +51,14 @@ header a:hover {
 
 .navbar {
     position: fixed;
+    width: 8%;    
     z-index: 5;
-    top: 15%;
+    top: 18%;
+    left: 2%;
 }
 ul {
     list-style-type: none;
-    font-size: 1.2rem;       
+    font-size: 0.9rem;       
 }
 
 main li:nth-of-type(even) {
@@ -70,17 +68,20 @@ main li:nth-of-type(even) {
 }
 
 main li:nth-of-type(even)::before {
-    content: "◎ ";        
+    content: "○ ";  
+    padding: 0 10% 0 0;    
 }
 
 main li:nth-of-type(even):active::before {
-    content: "⦿ ";  /* noch schauen!!! */       
+    /* content: "◎ "; */
+    
+    /* font-size: larger;  noch schauen!!!  */       
 }
 
 main li:nth-of-type(odd) {
     padding: 50% 0 0 5%;
     border-left: 1px solid #867772;
-    margin: 0 0 0 7%;
+    margin: 0 0 0 4%;
 }
     
 p {
@@ -90,21 +91,17 @@ p {
 }
 
 h1, h2 {
-    color: rgb(234, 204, 194);
+    color: rgb(234, 204, 194); 
+    letter-spacing: .2rem;   
 }
 
 h1 {
-    font-size: 2.2rem;
-    margin: 15% 0;
+    font-size: 2rem;
+    margin: 15% 0 0 0;
 }
 
 h2{
     font-size: 1.2rem;
-}
-
-.button {
-    color: rgb(115, 115, 115);
-    background: #ebccc2;
 }
 
 ul li a:active, ul li a:hover {
@@ -114,15 +111,17 @@ ul li a:active, ul li a:hover {
 
 /* main  */
 .mainAbout {
-    width: 100%;
-       
+    width: 100%;       
 }
+
+
 
 img {
     width: 100%;
     height: 100%;
 }
 /* About  */
+
 
 .goBeyond {
     width: 29%;
@@ -154,31 +153,109 @@ figure.alchemy {
 
 /* lounger + experience */
 
-#lounger, #experience {
-    display: flex;
+#lounger, #experience, #lounger {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
 }
 
 .lounger-bg {
-    width: 60%;    
-    margin: -2% 0 1% -4%;    
+    height: 125%;
+    margin: -5%;   
 }
 
 .lounger-bg img {
    object-fit: cover; 
-   width: 99%;
-   height: 108%;   
+   height: 100%;
+   width: 111%;  
+   
 }
 
-.loungertxt {    
-    padding: 10% 0 5% 3%;
-    width: 40%;
+.loungertxt {  
+    margin: 14% 4% 5% 22%;      
+    width: 75%;
 }
 
 .loungertxt h1 {
-    margin: 18% 0;
+    margin: 18% 0 20%;   
+}
+
+.loungertxt p {
+    padding: 0 20% 0 0;   
 }
 
 /* inspiration */
+
+#inspiration {
+    width: 69%;
+    margin: 10% auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+video, .inspButtonSection {
+    width: 100%;
+    grid-column: 1 / span 2;
+}
+
+.inspButtonSection {
+    margin: 20% 0;
+}
+
+.inspButtonSection h1{
+    margin: 1% 0 3% 0;
+}
+
+.inspButtonSection div {
+    display: flex;
+}
+.box {
+    border: 1px solid #ebccc2;
+    width: 10%;
+    text-align: center;
+    padding: 0 2%;
+    margin: 0 2% 0 0;
+}
+
+.inspButtonSection p {
+    margin: 1% 0;;
+}
+
+.inspGridTxt {
+    margin: 0 5%;
+}
+
+.inspGridTxt h1{
+    margin: 2% 7% 2% 0;
+}
+
+.inspGridTxt p{
+    margin: 0 15% 0 0;
+}
+
+/* shop */
+
+.shop {
+    width: 68%;
+    margin: 4% 24% 0;
+    text-align: center;
+}
+
+.shop p {
+    margin: 2% 0;
+} 
+
+button {
+    color: rgb(115, 115, 115);
+    border: none;
+    background: #ebccc2;
+    padding: 2% 5%;;
+}
+
+
+
+
 
 
 
