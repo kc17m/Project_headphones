@@ -34,7 +34,7 @@ nav > div {
 }
 
 .socialMedia li {
-    padding: 0 3%;
+    padding: 0 4%;
 }
 
 a, ul {
@@ -51,9 +51,9 @@ header a:hover {
 
 .navbar {
     position: fixed;
-    width: 8%;    
+    width: 12%;    
     z-index: 5;
-    top: 18%;
+    top: 15%;
     left: 2%;
 }
 ul {
@@ -66,32 +66,25 @@ main li:nth-of-type(even) {
     width: 105%;
     margin: 0 20% 0 0;
     padding: 12% 0;
-   }
+}
 
 main li:nth-of-type(even)::before {
-    content: "○       ";  
-    padding: 0 10% 0 0;    
+    content: "○ ";  
+    padding: 0 10% 0 0; 
+    margin:  0 30% 0 0;
 }
 
 .active a {
     color: #fff;
 }
 
- main li.active:nth-of-type(even)::before {
+main li.active:nth-of-type(even)::before {
     content: "○";
     border: 1px solid #fff;
     border-radius: 50%;
     padding: 1px 3px 1px 3px;
-    margin: 0 11% 0 0;
-    width: 2px;  
-    } 
-
-
-main li:nth-of-type(even):active::before {
-    /* content: "◎ "; */
-    
-    /* font-size: larger;  noch schauen!!!  */       
-}
+    margin: 0 35% 0 0;
+} 
 
 main li:nth-of-type(odd) {
     padding: 50% 0 0 5%;
@@ -102,7 +95,7 @@ main li:nth-of-type(odd) {
 p {
     color: rgb(115, 115, 115);
     line-height: 2rem;
-    margin: 5% 0;
+    margin: 3% 0 1%;
 }
 
 h1, h2 {
@@ -112,7 +105,7 @@ h1, h2 {
 
 h1 {
     font-size: 2rem;
-    margin: 15% 0 0 0;
+    margin: 11% 0 0 0;
 }
 
 h2{
@@ -129,28 +122,25 @@ ul li a:active, ul li a:hover {
     width: 100%;       
 }
 
-
-
 img {
     width: 100%;
     height: 100%;
 }
 /* About  */
 
-
 .goBeyond {
     width: 29%;
-    margin: 10% 0 10% 28%;
+    margin: 14% 0 8% 31%;
 }
 
 .goBeyond_bg {
-    width: 95%;
-    margin: 5% 10% 5% 2%;
+    width: 82%;
+    margin: 22% 7% 5% 7.5%;
 }
 
 .aboutAlchemy {
     width: 80%;
-    margin: 8% auto;
+    margin: 8% 20%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -158,12 +148,12 @@ img {
 }
 
 figure.alchemy {
-    width: 80%;
-    height: 80%
+    width: 90%;
+    height: 90%
 }
 
 .aboutAlchemy p {
-    width: 71%;
+    width: 69%;
 }
 
 /* lounger + experience + part of shop*/
@@ -175,13 +165,13 @@ figure.alchemy {
 }
 
 .lounger-bg {
-    height: 125%;    
+    height: 105%; 
 }
 
 .lounger-bg img {
-    object-fit: cover; 
-    height: 100%;
-    width: 111%;     
+    object-fit: cover;
+    height: 127%;
+    width: 116%;     
 }
 
 .loungertxt {  
@@ -200,8 +190,8 @@ figure.alchemy {
 /* inspiration */
 
 #inspiration {
-    width: 69%;
-    margin: 10% auto;
+    width: 64%;
+    margin: 12% auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -222,17 +212,19 @@ video, .inspButtonSection {
 
 .inspButtonSection div {
     display: flex;
-}
-.box {
-    border: 1px solid #ebccc2;
-    width: 10%;
-    text-align: center;
-    padding: 0 2%;
-    margin: 0 2% 0 0;
+    justify-content: space-between;
+    width: 20%;
 }
 
 .inspButtonSection p {
-    margin: 1% 0;;
+    margin: 1% 0;
+}
+p.box {
+    border: .5px solid #867772;
+    padding: 0 5.5%;
+    font-size: .8rem;
+    text-align: center;
+    margin: 0 2.5%;
 }
 
 .inspGridTxt {
