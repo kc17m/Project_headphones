@@ -2,10 +2,8 @@
     margin: 0; 
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-
-/* Font: Work sans
-Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115)  */
 
 @font-face {
     font-family: Work sans;
@@ -55,12 +53,12 @@ header a:hover {
     position: fixed;
     width: 12%;    
     z-index: 5;
-    top: 15%;
+    top: 12%;
     left: 2%;
 }
 ul {
     list-style-type: none;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     position: relative;       
 }
 
@@ -89,7 +87,7 @@ main li.active:nth-of-type(even)::before {
 } 
 
 main li:nth-of-type(odd) {
-    padding: 50% 0 0 5%;
+    padding: 36% 0 0 5%;
     border-left: 1px solid #867772;
     margin: 0 0 0 4%;
 }
@@ -119,24 +117,23 @@ ul li a:active, ul li a:hover {
     transition: .3s;
 }
 
-/* !!!!main {
-    margin: 0 0 0 0;
-    transition: all 1s linear;
-}
-
-main:active {
-    margin: 0 0 25% 0;
-    transition: all 1s linear .5s;  
-}  */
-
 /* main  */
-.mainAbout {
-    width: 100%;       
-}
 
 img {
     width: 100%;
     height: 100%;
+}
+
+main, header {
+    position: static;
+    transition: all 3s ease-in-out ;
+}
+
+main:active {
+    position: fixed;
+    top: -.2%;
+    left: -.2%;
+    transition: all 3s ease-in-out ;
 }
 /* About  */
 
@@ -156,7 +153,6 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-
 }
 
 figure.alchemy {
@@ -170,19 +166,15 @@ figure.alchemy {
 
 /* lounger + experience + part of shop*/
 
-#lounger, #experience, #lounger {
+#lounger, #experience, #shop {
     display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.lounger-bg {
-    height: 130%; 
+    grid-template-columns: 50% 50%;      
 }
 
 .lounger-bg img {
     object-fit: cover;
-    height: 105%;
-    width: 116%;     
+    height: 130%;
+    width: 111%;     
 }
 
 .loungertxt {  
@@ -198,7 +190,7 @@ figure.alchemy {
     padding: 0 20% 0 0;   
 }
 
-/* inspiration */
+/* inspiration + part of newsletter*/
 
 #inspiration, #newsletter {
     width: 64%;
@@ -254,7 +246,7 @@ p.box {
 
 .shop {
     width: 68%;
-    margin: 4% 24% 0;
+    margin: 4% 20% 0;
     text-align: center;
 }
 
@@ -273,7 +265,7 @@ button {
 
 form {
     color: rgb(115, 115, 115);
-    width: 50%;
+    width: 62%;
     margin: 10% auto;
 }
 
