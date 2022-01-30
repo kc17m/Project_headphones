@@ -2,33 +2,38 @@
     margin: 0; 
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 @font-face {
-    font-family: Work sans;
+    font-family: "Work sans";
     src: url(../fonts/Work_Sans/static/WorkSans-Light.ttf);
+}
+
+@font-face {
+    font-family: "Work semibold";
+    src: url(../fonts/Work_Sans/static/WorkSans-SemiBold.ttf);
 }
 
 body {
     background: #2e2e2e;
-    font-family: Work sans;    
+    font-family: "Work sans";    
 }
 
-nav {
-    position: fixed;
-    top: 2%;
-    left: 1.5%;
-    width: 95%;
-}
-
-nav, nav div {
+nav ul, nav ul.divFlex, nav ul.socialMedia {
     list-style: none;
     display: flex;
     justify-content: space-between; 
 }
 
-nav > div {
+nav > ul {
+    position: fixed;
+    top: 2%;
+    left: 6.5%;
+    width: 86%;
+    z-index: 5;
+}
+
+ul.divFlex {
     width: 37%;
 }
 
@@ -53,7 +58,7 @@ header a:hover {
     position: fixed;
     width: 12%;    
     z-index: 5;
-    top: 12%;
+    top: 17%;
     left: 2%;
 }
 
@@ -88,7 +93,7 @@ main li.active:nth-of-type(even)::before {
 } 
 
 main li:nth-of-type(odd) {
-    padding: 36% 0 0 5%;
+    padding: 39% 0 0 5%;
     border-left: 1px solid #867772;
     margin: 0 0 0 4%;
 }
@@ -125,11 +130,11 @@ img {
     height: 100%;
 }
 
-section {
+section, figure {
     transform: translateY(2px);
 }
 
-section:active {
+section:active, figure:active {
     transform: translateY(-2px);    
 }
 
@@ -221,11 +226,12 @@ video, .inspButtonSection, #newsletter figure {
     margin: 1% 0;
 }
 p.box {
-    border: .5px solid #867772;
-    padding: 0 5.5%;
-    font-size: .8rem;
+    border: 2.5px solid rgb(115, 115, 115);
+    padding: 0 3.5%;
+    letter-spacing: .1rem;
+    font-size: .7rem;
     text-align: center;
-    margin: 0 2.5%;
+    margin: 0 1%;
 }
 
 .inspGridTxt {
@@ -249,17 +255,25 @@ p.box {
 }
 
 .shop p {
-    margin: 2% 0;
+    margin: 2% 0 0 0;
 } 
 
-button {
+p.button  {
+    font-family: "Work semibold";
     color: rgb(115, 115, 115);
-    border: none;
+    font-size: .8rem;
     background: #ebccc2;
-    padding: 2% 5%;;
+    width: 12%;
+    border-radius: 5%;
+    margin: 1% auto;
+    padding: .3% 3%;;
 }
 
 /* newsletter */
+
+#newsletter img {
+    filter:brightness(66%);
+}
 
 form {
     color: rgb(115, 115, 115);
