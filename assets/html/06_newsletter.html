@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Newsletter - subscribe</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <li><img src="../img/logo.svg" alt="Logo"></li>
+            <div>
+                <li class="active"><a href="#">Subscribe & Contact</a></li>
+                <div class="socialMedia">
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Youtube</a></li>
+                </div>
+                <li><a href="#">DE</a></li>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <aside class="navbar">
+            <ul>
+                <li></li>
+                <li><a href="../../index.html">ABOUT</a></li>
+                <li></li>
+                <li><a href="../html/02_lounger.html">LOUNGER</a></li>
+                <li></li>
+                <li><a href="../html/03_experience.html">EXPERIENCE</a></li>
+                <li></li>
+                <li><a href="../html/04_inpiration.html">INSPIRATION</a></li>
+                <li></li>
+                <li><a href="../html/05_shop.html">SHOP</a></li>
+                <li></li>
+            </ul>
+        </aside>
+        <section id="newsletter">
+            <figure>
+                <img src="../img/youAreWhatyou.jpeg" alt="headphones on laptop">
+            </figure>
+            <article class="inspButtonSection">
+                <h2>Make sure to never miss any of your latest events and
+                    updates in your
+                    region.
+                </h2>
+                <h1>Join our community and you will be first to know what's going on. </h1>
+                <div>
+                    <form action="" onsubmit="return false">
+                        <label for="firstName">Your name:</label>
+                        <br><br>
+                        <input type="text" name="firstName" id="firstName" placeholder="First name" required>
+                        <input type="text" name="lastName" id="lastName" placeholder="Last name" required>
+                        <br>
+                        <br><label for="country">Country:</label>
+                        <br><br>
+                        <input type="text" name="country" id="country" placeholder="United Kingdom" required>
+                        <br>
+                        <br>
+
+                        <label for="email">Email:</label><br><br>
+                        <input type="email" name="email" id="email" placeholder="janedoe@email.com" required>
+                        <br>
+                        <br>
+
+                        <input type="button" value="Submit" onclick="showName()">
+                    </form>
+
+                </div>
+                <h2 id="thankMessage">
+                </h2>
+            </article>
+        </section>
+
+    </main>
+
+
+    <script src="../js/main.js"></script>
+    <script src="https://kit.fontawesome.com/97f8f2a2f5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

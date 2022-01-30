@@ -172,16 +172,17 @@ figure.alchemy {
 
 #lounger, #experience, #lounger {
     display: grid;
+    width: 100%;
     grid-template-columns: 50% 50%;
 }
 
 .lounger-bg {
-    height: 130%; 
+    height: 105%; 
 }
 
 .lounger-bg img {
     object-fit: cover;
-    height: 105%;
+    height: 127%;
     width: 116%;     
 }
 
@@ -289,13 +290,8 @@ input[type=submit]:hover, input[type=button]:active {
     background: rgb(115, 115, 115);  
 }
 
-::placeholder {
-    opacity: .5;;
-}
-
 #newsletter article {
-    width: 80%; 
-    margin: 5% auto;
+    margin: 5%;
 }
 
 
