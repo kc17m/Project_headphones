@@ -131,11 +131,18 @@ img {
 }
 
 section, figure {
-    transform: translateY(2px);
+    transform: translateY(4px);
+    transition: all .8s ease;
 }
 
-section:active, figure:active {
-    transform: translateY(-2px);    
+main:active > section {
+    transform: translateY(-4px);  
+    transition: all .8s ease;  
+}
+
+main:active > figure {
+    transform: translateY(-2px);  
+    transition: all .8s ease;  
 }
 
 /* About  */
