@@ -288,20 +288,22 @@ form {
     margin: 10% auto;
 }
 
-input[type=text], input[type=email], input[type=button]  {
+input[type=text], input[type=email], input[type=button], input[type=text]:focus, input[type=email]:focus  {
     border-radius: 4px;
-    padding: 5% 8%;;
+    padding: 5% 8%;
     background: #ebccc2;
-    color: rgb(115, 115, 115);    
+    color: rgb(115, 115, 115); 
+    outline: none;   
 }
 
-input[type=submit]:hover, input[type=button]:active {
-    color: #fff ; 
+
+input[type=button]:hover, input[type=button]:active {
+    color: #fff; 
     background: rgb(115, 115, 115);  
 }
 
 ::placeholder {
-    opacity: .5;;
+    opacity: .5;
 }
 
 #newsletter article {
